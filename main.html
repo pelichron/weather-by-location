@@ -1,0 +1,38 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="location-wrapper">
+        <div id="pre-locate">
+          <h1 class="text-center" id="prelocate-text">Locating...</h1>
+          <div class="d-flex flex-row justify-content-center">
+            <i class="far fa-compass fa-spin fa-10x"></i>
+          </div>
+        </div>
+        <div class="weather-wrapper" id="weather-content">
+          <h1 class="location"></h1>
+          <p class="day-and-time"></p>
+          <p class="weather-description"></p>
+          <div class="temperature-wrapper">
+            <div class="row">
+              <div class="weather-icon"></div>
+              <div class="tab-content temperature-tab" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="fahrenheit" role="tabpanel" aria-labelledby="fahrenheit-tab">
+                </div>
+                <div class="tab-pane fade" id="celsius" role="tabpanel" aria-labelledby="celsius-tab">
+                </div>
+              </div>
+            </div>
+            <div class="nav nav-pills" id="temperature-tabs" role="tablist">
+              <a class="nav-item nav-link active px-2" id="fahrenheit-tab" data-toggle="pill" href="#fahrenheit" role="tab" aria-controls="fahrenheit" aria-selected="true">&deg;F</a>
+              <a class="nav-item nav-link px-2" id="celsius-tab" data-toggle="pill" href="#celsius" role="tab" aria-controls="celsius" aria-selected="false">&deg;C</a>
+            </div>
+          </div>
+        </div>
+        <div class="button-holder d-flex flex-row justify-content-center">
+          <button class="btn btn-dark btn-lg" id="geolocation-button" type="button">Check my local weather</button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>

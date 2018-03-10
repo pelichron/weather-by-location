@@ -1,0 +1,62 @@
+// Variables
+$quattrocento-sans: "Quattrocento Sans", sans-serif;
+$temperature-pill-color: #208fa3;
+
+// Actual styles
+body {
+  transition: 0.25s ease-in all;
+}
+
+.jumbotron {
+  background: transparent;
+  font-family: $quattrocento-sans;
+  
+  .weather-wrapper {
+    display: none;
+    margin-bottom: 2rem;
+    
+    h1 {
+      font-size: 3rem;
+      margin-bottom: -0.125rem;
+    }
+    
+    p {
+      font-size: 1.75rem;
+      margin-bottom: -0.25rem;
+    }
+    
+    .temperature-wrapper {
+      
+      img {
+        margin: -0.25rem 0.5rem;
+      }
+      
+      a {
+        color: darken($temperature-pill-color, 10%);
+        font-size: 1.125rem;
+      }
+      
+      a.nav-item.nav-link.active {
+        background-color: $temperature-pill-color;
+        color: #fff;
+      }
+      
+      a.nav-item.nav-link {
+        border: 2px solid $temperature-pill-color;
+        color: darken($temperature-pill-color, 10%);
+      }
+      
+      #fahrenheit-tab {
+        border-radius: 3% 0 0 3%;
+      }
+      
+      #celsius-tab {
+        border-radius: 0 3% 3% 0;
+      }
+    }
+  }
+  
+  .button-holder {
+    margin-top: 2rem;
+  }
+}
